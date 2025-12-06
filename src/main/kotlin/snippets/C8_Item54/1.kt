@@ -1,4 +1,4 @@
-package f_C8_Item54.s_1
+package C8_Item54.s_1
 
 interface Iterable<out T> {
     operator fun iterator(): Iterator<T>
