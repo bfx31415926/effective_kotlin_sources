@@ -2,17 +2,17 @@ package C1_Item05.myStack
 
 import java.util.Stack
 
-class MyStack: Stack<Int>()
+class MyStack : Stack<Int>()
 
-fun MyStack.myPop(p: Int): Int{
-    require( p <= size ){
+fun MyStack.myPop(p: Int): Int {
+    require(p <= size) {
         "Cannot remove more elements than current size"
     }
     return pop()
 }
 
 
-fun main(){
+fun main() {
     val stack = MyStack()
     stack.push(15)
     println("stack.size = ${stack.size}")

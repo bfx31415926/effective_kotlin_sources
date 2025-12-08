@@ -6,7 +6,7 @@ package C1_Item02.myFile7
 
 import java.util.concurrent.ConcurrentLinkedQueue
 
-fun main(){
+fun main() {
     val clq = ConcurrentLinkedQueue<Int>()
     clq.add(null)
- }
+}

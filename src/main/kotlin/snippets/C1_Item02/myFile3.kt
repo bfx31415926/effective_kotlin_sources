@@ -2,7 +2,7 @@ package C1_Item02.myFile3
 
 import kotlin.concurrent.thread
 
-fun main(){
+fun main() {
     val lock = Any()
     var num = 0
     for (i in 1..1000) {

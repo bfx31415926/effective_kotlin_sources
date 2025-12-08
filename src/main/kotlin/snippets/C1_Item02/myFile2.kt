@@ -2,7 +2,7 @@ package C1_Item02.myFile2
 
 import kotlin.concurrent.thread
 
-fun main(){
+fun main() {
     var numbers = mutableListOf<Int>()
     for (i in 1..1000) {
         thread {

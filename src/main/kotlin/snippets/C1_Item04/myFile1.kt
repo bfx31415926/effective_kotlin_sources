@@ -3,7 +3,7 @@
  */
 package C1_Item04.myFile1
 
-fun main(){
+fun main() {
     var numbers = (2..100).toList()
     val primes = mutableListOf<Int>()
 

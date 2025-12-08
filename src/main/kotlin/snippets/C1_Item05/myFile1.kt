@@ -1,7 +1,7 @@
 package C1_Item05.myFile1
 
-fun main(){
-    val list = listOf<Int>(1,2,3,4,5,6,7,8)
+fun main() {
+    val list = listOf<Int>(1, 2, 3, 4, 5, 6, 7, 8)
     val list1 = list.take(5)
     val list2 = list.drop(1)
     println("list1 = $list1")

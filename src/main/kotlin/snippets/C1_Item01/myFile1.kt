@@ -2,7 +2,7 @@ package C1_Item01.myFile1
 
 import kotlin.concurrent.thread
 
-fun main(){
+fun main() {
     var list = listOf<Int>()
     for (i in 1..1000) {
         thread {

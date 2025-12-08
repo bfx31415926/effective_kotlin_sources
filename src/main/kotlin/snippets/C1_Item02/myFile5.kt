@@ -3,7 +3,7 @@ package C1_Item02.myFile5
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.concurrent.thread
 
-fun main(){
+fun main() {
     val num = AtomicInteger(0)
     for (i in 1..1000) {
         thread {
@@ -13,4 +13,4 @@ fun main(){
     }
     Thread.sleep(5000)
     print(num.get()) // 1000
- }
+}
