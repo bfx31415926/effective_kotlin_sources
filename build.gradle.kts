@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.9.10"
     java
+    id("org.jetbrains.dokka") version "1.9.10" // Укажите актуальную версию Dokka
 }
 
 group = "academy.kt"
@@ -28,3 +29,16 @@ tasks.getByName<Test>("test") {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "16"
 }
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(file("docs"))
+
+    // Настраиваем параметры документации
+    dokkaSourceSets {
+        named("main") {
+            suppressInheritedMembers = false
+            includeNonPublic = false
+        }
+    }
+}
+
