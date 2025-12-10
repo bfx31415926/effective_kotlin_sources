@@ -46,3 +46,25 @@ class ValueMatcher<T> private constructor(
             )
     }
 }
+
+fun main(){
+    val vm: ValueMatcher<Int>
+    vm = ValueMatcher.equal(1)
+    println("1 == 1: ${vm.match( 1 )}")
+
+    var vm1: ValueMatcher<List<Int>>
+    vm1 = ValueMatcher.notEmptyList()
+    println("[1, 2, 3] is not empty: ${vm1.match( listOf(1,2,3)) }")
+
+    println("null is not empty list: ${vm1.match( null) }")
+
+    val vm2: ValueMatcher<List<Int>>
+    vm2 = ValueMatcher.emptyList()
+    println("null is empty list: ${vm2.match( null) }")
+}
+/*
+1 == 1: true
+[1, 2, 3] is not empty: true
+null is not empty list: false
+null is empty list: false
+ */
