@@ -15,3 +15,6 @@ fun main() {
     print(D().foo()) // d
     print((D() as C).foo()) // c
 }
+/*
+dcdc
+ */
